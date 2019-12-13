@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "fdf6d265-1a5d-4471-88f3-f3f402cd01d5",
+		"name": "Azure Service Bus Example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8989/sendMessageToQueue",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Test message JMS on Azure Service Bus"
+				},
+				"url": {
+					"raw": "http://localhost:8989/sendMessageToQueue",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"sendMessageToQueue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8989/sendDelayedMessageToQueue",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Test delayed message JMS on Azure Service Bus"
+				},
+				"url": {
+					"raw": "http://localhost:8989/sendDelayedMessageToQueue",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"sendDelayedMessageToQueue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8989/sendDelayedMessageToQueueWorkaround",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "Test delayed message JMS on Azure Service Bus"
+				},
+				"url": {
+					"raw": "http://localhost:8989/sendDelayedMessageToQueueWorkaround",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8989",
+					"path": [
+						"sendDelayedMessageToQueueWorkaround"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
